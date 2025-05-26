@@ -1,0 +1,28 @@
+/* Form Styling */
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Post List Styling */
+.post-list .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn-outline-secondary {
+    margin-right: 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 2rem;
+}

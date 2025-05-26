@@ -1,0 +1,10 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Logged Out</h4>
+    <p>You have been successfully logged out from Othmane's Blog.</p>
+    <hr>
+    <a href="{% url 'home' %}" class="btn btn-primary">Return to Homepage</a>
+  </div>
+{% endblock %}

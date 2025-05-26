@@ -1,0 +1,16 @@
+<!-- core/templates/core/post_list.html -->
+{% extends 'core/base.html' %}
+
+{% block content %}
+  <h1>All Posts</h1>
+  <a href="{% url 'post_create' %}">New Post</a>
+  <ul>
+    {% for post in posts %}
+      <li>
+        <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+        <a href="{% url 'post_update' post.pk %}">Edit</a>
+        <a href="{% url 'post_delete' post.pk %}">Delete</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

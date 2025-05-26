@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <h1>Welcome, {{ user.username }}</h1>
+        <img src="{% static 'images/avatar.png' %}" alt="Avatar">
+    {% endif %}
+</body>
+</html>
